@@ -1,0 +1,40 @@
+.footer {
+  background-color: $coffeebrown;
+  color: $white;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  .column {
+    padding: 20px 0px 0 0;
+    min-width: max-content;
+    .column-header {
+      font-size: $body-16px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: $body-14px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .membership {
+    padding-left: 50px;
+
+    .social {
+      margin-right: 10px;
+    }
+  }
+  .email-newsletter {
+    margin-top: 63px;
+  }
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    .membership {
+      padding-left: 0;
+    }
+  }
+}

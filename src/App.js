@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import './App.scss'
 import HeroTestimony from "./components/HeroTestimony";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Hero />
       <HeroTestimony/>
       <HeroTestimony />
-      <Newsletter/>
+      <Newsletter />
+      <Footer/>
     </div>
   );
 }

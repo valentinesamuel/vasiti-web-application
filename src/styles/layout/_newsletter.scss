@@ -16,7 +16,7 @@
 }
 
 .newsform {
-  width: 450px;
+ width: 450px;
   color: $white;
   .form-header {
     font-size: $heading-40px;
@@ -60,8 +60,13 @@
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
       .newsletter{
+            width: 100%;
             flex-direction: column-reverse;
             align-items: flex-start;
+
+            .newsform{
+                  width: 100%;
+            }
       }
 
       .phone-image-container{
