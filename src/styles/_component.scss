@@ -7,3 +7,35 @@
   box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
   border-radius: 4px;
 }
+
+.tag {
+  text-transform: uppercase;
+  font-size: $body-13px;
+  padding: 7px 10px;
+  font-weight: $font-weight-500;
+  width: max-content;
+  border-radius: 4px;
+}
+
+.blue-customer-tag {
+  @extend .tag;
+  color: $status-text-blue;
+  background-color: $status-bg-blue;
+}
+
+.grey-customer-tag {
+  @extend .tag;
+  border: 1px solid $status-bg-gray;
+}
+
+.orange-vendor-tag {
+  @extend .tag;
+  border: 1px solid $status-border-orange;
+  background-color: $status-border-orange;
+}
+
+.green-vendor-tag {
+  @extend .tag;
+  color: $status-text-green;
+  background-color: $status-bg-green;
+}

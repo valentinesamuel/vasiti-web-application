@@ -1,4 +1,3 @@
-import Grid from '@mui/material/Grid';
 import fb from '../assets/sm-icons/fb.svg'
 import ig from '../assets/sm-icons/ig.svg'
 import ln from '../assets/sm-icons/ln.svg'
