@@ -1,0 +1,90 @@
+.picture {
+  @extend .image;
+}
+.women {
+  position: relative;
+  z-index: 1;
+  left: 10%;
+  height: auto;
+  width: 100%;
+}
+.women-backdrop {
+  position: absolute;
+  left: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-testimony {
+  overflow: hidden;
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+  padding: 64px 128px 0 127px;
+  background: $hero-testimony-bg;
+}
+
+.testimony {
+  color: $white;
+  width: 430px;
+  height: max-content;
+  .testifier {
+    font-size: $heading-32px;
+    margin-bottom: 8px;
+    margin-top: calc(128px - 64px);
+  }
+  .testimony-body {
+    line-height: 27px;
+    font-size: $body-18px;
+    margin-bottom: 28px;
+  }
+  .customer-tag {
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    border: 1px solid $status-bg-gray;
+    font-size: $body-13px;
+    padding: 7px 10px;
+    width: max-content;
+    border-radius: 4px;
+  }
+  .shareStory {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $body-16px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .hero-testimony {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .picture {
+    transform: scale(1.1);
+    margin-top: 83px;
+    .women {
+      left: 0;
+    }
+    .women-backdrop {
+      left: 0;
+    }
+  }
+
+  .testimony {
+    padding: 0 62px;
+    .testifier {
+      margin-top: 104px;
+      margin-bottom: 14px;
+      font-size: $heading-24px;
+    }
+    .testimony-body {
+      font-size: $body-16px;
+    }
+  }
+}

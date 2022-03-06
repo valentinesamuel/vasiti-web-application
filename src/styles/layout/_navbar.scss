@@ -32,7 +32,7 @@
 }
 
 .signup-btn {
-  @extend button;
+  @extend .btn;
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
