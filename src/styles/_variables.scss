@@ -1,0 +1,50 @@
+// font family
+$inter: "Inter";
+$roboto: "Roboto";
+$sans-serif: sans-serif;
+
+// colors
+$vasiti-off-black: #242120;
+$vasiti-primary-color: #ff5c00;
+$white: #242120;
+$black: #000000;
+$brown: #25201d;
+$transparent-white: #ffffff;
+$status-text-blue: #0d019a;
+$status-text-gray: #ffffff;
+$status-text-green: #049a01;
+$status-text-orange: #ff5c00;
+$status-bg-blue: #eef8ff;
+$status-bg-green: #f0ffee;
+$status-bg-gray: #ffffff;
+$status-border-orange: #fff8f5;
+
+// font size
+$nav-text: 13px;
+$heading-main: 48px;
+$heading-24px: 24px;
+$heading-32px: 32px;
+$heading-40px: 40px;
+$body-18px: 18px;
+$body-16px: 16px;
+$body-15px: 15px;
+$body-14px: 14px;
+
+// Mobile Devices
+$min_mobile: 320px;
+$max_mobile: 480px;
+
+// iPads and Tablets
+$min_tablet: 481px;
+$max_tablet: 768px;
+
+// Laptops and Small screens
+$min_laptop: 769px;
+$max_laptop: 1024px;
+
+// Desktops and Large screens
+$min_desktop: 1025px;
+$max_desktop: 1200px;
+
+// Extra Large screens
+$large_screen: 1201px;

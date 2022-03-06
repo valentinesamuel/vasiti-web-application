@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  font-size: $nav-text;
+  font-family: $roboto;
+  padding: 20px 180px;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    height: 35px;
+    width: 150px;
+  }
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  li {
+    margin-right: 40px;
+  }
+}
+
+.sub-navbar {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+  justify-content: center;
+  padding: 0 317px;
+}
+.sub-navlinks {
+  @extend .navlinks;
+  padding: 17px 16px;
+}
+
+.signup-btn {
+  @extend button;
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .navbar {
+    padding: 0px;
+    .logo {
+      margin-top: 47px;
+      margin-left: 32px;
+      height: 40px;
+      width: 173px;
+    }
+    .navlinks {
+      visibility: hidden;
+    }
+  }
+  .sub-navbar {
+    visibility: hidden;
+  }
+}
