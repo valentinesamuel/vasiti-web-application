@@ -1,16 +1,16 @@
 .picture {
   @extend .image;
+  height: auto;
 }
 .women {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  left: 10%;
   height: auto;
   width: 100%;
+  bottom: 0;
 }
 .women-backdrop {
-  position: absolute;
-  left: 60px;
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -20,7 +20,6 @@
   display: flex;
   height: max-content;
   justify-content: space-between;
-  padding: 64px 128px 0 127px;
   background: $hero-testimony-bg;
 }
 
@@ -68,12 +67,6 @@
   .picture {
     transform: scale(1.1);
     margin-top: 83px;
-    .women {
-      left: 0;
-    }
-    .women-backdrop {
-      left: 0;
-    }
   }
 
   .testimony {

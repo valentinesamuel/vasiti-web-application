@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 
 import './App.scss'
 import HeroTestimony from "./components/HeroTestimony";
+import Newsletter from "./components/Newsletter";
 
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <HeroTestimony/>
+      <HeroTestimony />
+      <Newsletter/>
     </div>
   );
 }

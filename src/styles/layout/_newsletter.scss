@@ -1,0 +1,70 @@
+.newsletter {
+  background-color: $coffeebrown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-image-container {
+  z-index: 2; //remove after adding the testimonials above
+  margin-top: -70px;
+}
+
+.phone-image {
+  height: auto;
+  width: 100%;
+}
+
+.newsform {
+  width: 450px;
+  color: $white;
+  .form-header {
+    font-size: $heading-40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .form-paragraph {
+    margin-bottom: 32px;
+  }
+}
+
+.form {
+  width: fit-content;
+  display: flex;
+  height: 51px;
+  padding: 5px 5px 5px 0;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+
+  .email-input {
+    font-size: $body-14px;
+    border: none;
+    padding: 17px 18px;
+    height: 100%;
+    background: none;
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .subscription-btn {
+    padding: 8px 24px;
+    height: 100%;
+    border: none;
+    box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
+    border-radius: 4px;
+    background-color: $white;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+      .newsletter{
+            flex-direction: column-reverse;
+            align-items: flex-start;
+      }
+
+      .phone-image-container{
+            margin-top: calc(0px + 50px);
+      }
+}

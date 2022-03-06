@@ -1,8 +1,9 @@
 .hero {
   font-family: $inter;
   display: flex;
-  margin: 90px 67px 0 173px;
+  margin: 90px 0px 0 0px;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .text {
@@ -10,7 +11,7 @@
 
   .heading {
     font-size: $heading-40px;
-    width: 450px;
+    width: 560px;
     line-height: 60px;
     margin-bottom: 24px;
   }
@@ -30,19 +31,16 @@
   max-width: 100%;
   height: auto;
   object-fit: contain;
-  position: relative;
-  left: 80%;
-  top: 1%;
+  position: absolute;
   z-index: 1;
+  left: 12%;
 }
 
 .couple-backdrop {
-  max-width: 95%;
   height: auto;
-  bottom: 10%;
-  left: 80%;
-  transform: scale(1.3);
-  position: absolute;
+  bottom: 0%;
+  position: relative;
+  top: 7%;
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
@@ -71,15 +69,16 @@
 
     .image {
       transform: scale(1.2);
-      margin-top: 50px;
+      margin-top: 0px;
       .couple {
-        top: 0%;
-        left: 0%;
+        left: 0;
+        height: 100%;
       }
       .couple-backdrop {
-        transform: scale(1.1);
-        top: 12%;
-        left: 1.4%;
+        top: 0%;
+        transform: scale(0.8);
+        right: 20%;
+        
       }
     }
   }
