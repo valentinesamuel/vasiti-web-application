@@ -1,0 +1,66 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 430px;
+  background-color: $transparent-white;
+  padding: 57px 32px;
+}
+
+.title {
+  font-size: $heading-28px;
+}
+
+.file-input {
+  display: none;
+}
+
+.pic-title {
+  font-size: $body-14px;
+  color: $modal-text;
+  padding-bottom: 13px;
+}
+
+.input-field {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 34px;
+  font-size: $body-18px;
+  padding-bottom: 24px;
+
+  .name-field {
+    color: $modal-text;
+    font-size: $body-16px;
+  }
+
+  p,
+  svg {
+    display: flex;
+    align-items: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+
+  .name {
+    .name-field {
+      @extend .input-field;
+      width: 100%;
+    }
+    &:first-child {
+      margin-right: 21px;
+    }
+  }
+}
