@@ -17,10 +17,9 @@
   display: none;
 }
 
-.pic-title {
+.input-label {
   font-size: $body-14px;
   color: $modal-text;
-  padding-bottom: 13px;
 }
 
 .input-field {
@@ -30,9 +29,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 12px 34px;
+  padding: 12px 19px;
   font-size: $body-18px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+  margin-top: 13px;
 
   .name-field {
     color: $modal-text;
@@ -62,5 +62,13 @@
     &:first-child {
       margin-right: 21px;
     }
+  }
+}
+
+.testimony{
+  width: 100%;
+  
+  .story{
+    @extend .input-field;
   }
 }
