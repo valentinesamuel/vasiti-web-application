@@ -2,6 +2,7 @@
   @extend .image;
   height: auto;
 }
+
 .women {
   position: absolute;
   z-index: 1;
@@ -9,6 +10,7 @@
   width: 100%;
   bottom: 0;
 }
+
 .women-backdrop {
   position: relative;
   width: 100%;
@@ -19,45 +21,51 @@
   overflow: hidden;
   display: flex;
   height: max-content;
+  padding: 0 100px;
   justify-content: space-between;
   background: $hero-testimony-bg;
 }
 
-.hero-testimony-orange{
-flex-direction: row-reverse;
+.hero-testimony-orange {
+  flex-direction: row-reverse;
 }
 
-.vendor{
- @extend .orange-vendor-tag;
- margin-bottom: 20px;
- border: 1px solid $status-text-orange;
+.vendor {
+  @extend .orange-vendor-tag;
+  margin-bottom: 20px;
+  border: 1px solid $status-text-orange;
 }
-.orange-vendor{
+
+.orange-vendor {
   background-color: $status-border-orange;
-  
+
 }
 
 
 .customer-tag {
-   @extend .grey-customer-tag;
-  }
+  @extend .grey-customer-tag;
+}
 
 
 .testimony {
   color: $white;
   width: 430px;
   height: max-content;
+  padding-right: 100px;
+  padding-bottom: 20px;
+
   .testifier {
     font-size: $heading-32px;
     margin-bottom: 8px;
     margin-top: 136px;
   }
+
   .testimony-body {
     line-height: 27px;
     font-size: $body-18px;
     margin-bottom: 28px;
   }
-  
+
   .shareStory {
     display: flex;
     flex-direction: column;
@@ -68,20 +76,21 @@ flex-direction: row-reverse;
     font-size: $body-16px;
     line-height: 32px;
   }
-  .orange{
+
+  .orange {
     color: $status-text-orange
   }
 }
 
 
-.orange-testimony{
-    color: $black;
-  }
+.orange-testimony {
+  color: $black;
+}
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .hero-testimony {
     flex-direction: column-reverse;
-    padding: 0;
+    padding: 0 30px;
   }
 
   .picture {
@@ -91,16 +100,19 @@ flex-direction: row-reverse;
 
   .testimony {
     padding: 0 62px;
+
     .testifier {
       margin-top: 104px;
       margin-bottom: 14px;
       font-size: $heading-24px;
     }
+
     .testimony-body {
       font-size: $body-16px;
     }
   }
-  .hero-testimony-orange{
-flex-direction: column;
-}
+
+  .hero-testimony-orange {
+    flex-direction: column;
+  }
 }

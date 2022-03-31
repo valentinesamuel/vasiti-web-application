@@ -1,7 +1,5 @@
 .container {
-  max-width: 300px;
-  border: 1px solid red;
-
+  max-width: 25rem;
   .photo {
     height: 200px;
     width: 200px;
@@ -26,9 +24,10 @@
       font-size: $body-15px;
       color: $location-text;
       margin-right: 16px;
+      margin-top: 0;
     }
 
-    
+
   }
 
   .testimony {
@@ -39,22 +38,25 @@
   }
 }
 
-.green{
+.green {
   @extend .green-vendor-tag;
 }
-.orange{
-@extend .orange-vendor-tag
+
+.orange {
+  @extend .orange-vendor-tag
 }
-.blue{
-@extend .blue-customer-tag;
+
+.blue {
+  @extend .blue-customer-tag;
 }
-.gray{
-@extend .grey-customer-tag;
+
+.gray {
+  @extend .grey-customer-tag;
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
 
-  .testimony{
+  .testimony {
     padding: 0;
   }
 }
